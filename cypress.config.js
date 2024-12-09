@@ -21,7 +21,6 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectId: 'r7xo7s',
   e2e: {
     baseUrl: "https://magento.softwaretestingboard.com/",
     specPattern: "cypress/e2e/**/*.feature",
