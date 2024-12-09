@@ -1,0 +1,25 @@
+{
+  "name": "cypress-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run:parallel":"cy:run --record --key <MENTION_CYPRESS_KEY> --parallel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.16.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "html": {
+      "enabled": true,
+      "output":"cypress/cucumberReport/result.html"
+    }
+  }
+}
